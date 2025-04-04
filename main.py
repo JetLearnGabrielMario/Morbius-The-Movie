@@ -17,10 +17,13 @@ def draw():
     #screen is another built in object
     screen.clear()
     screen.fill(color = (4, 0, 250))
-    #place morbius
+    #place_morbius
     morbius.draw()
     screen.draw.text(message, center = (400, 10), fontsize = 30)
 
+def place_morbius():
+    morbius.x = randint(50,WIDTH-50)
+    morbius.y = randint(50,WIDTH-50)
 
 def on_mouse_down(pos):
     #print("Hello World!")
